@@ -9,6 +9,7 @@ body {
 }
 
 .head_box{
+    margin-top: -1.2em;
     display: flex;
     flex-direction: column;
     padding-left: 2em;
@@ -22,10 +23,29 @@ body {
 }
 
 .brand_gradient{
-    background: radial-gradient(#7068F4, #FF64B4, #FFD94A);
+    background: radial-gradient(circle farthest-corner at 50% 50%, #7068F4, #FF64B4, #FFD94A) 0 0 / 200% 200%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: move-gradient 5s linear infinite;
+}
+
+@keyframes move-gradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+}
+
+
+#bottom{
+    position: relative;
+    font-weight: 300;
+    height: 0.4em;
+    width: 100%;
+    text-align: right;
 }
 
 #top{
@@ -33,9 +53,17 @@ body {
     top: 5em;
 }
 
+
+
 .half_width{
     width: 50%;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
 
 .center_text{
     text-align: center;
