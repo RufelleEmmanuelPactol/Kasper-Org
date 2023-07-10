@@ -1,0 +1,43 @@
+
+
+
+/* Main Theme */
+body {
+    font-family: 'Inter';
+    background: #000000;
+    color: #d2d2d7;
+}
+
+.head_box{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 10em;
+}
+
+.brand_gradient{
+    background: radial-gradient(#7068F4, #FF64B4, #FFD94A);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#top{
+    position: relative;
+    top: 5em;
+}
+
+.half_width{
+    width: 50%;
+}
+
+.center_text{
+    text-align: center;
+    width: 100%;
+}
